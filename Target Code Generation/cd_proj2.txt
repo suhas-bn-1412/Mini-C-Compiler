@@ -1,0 +1,21 @@
+load/store
+LD Dest(Register), Src(memlocation)
+ST Dest(memlocatioin), Src(Reg)
+
+t1 = a
+LD R1 , a
+
+
+
+x = a[i]
+
+t1 = 4*i
+t2 = a[t1]
+x = t2
+
+LD R1, i
+MUL R1, R1, 4
+MOV R3, R1(a)
+ST x R3
+
+

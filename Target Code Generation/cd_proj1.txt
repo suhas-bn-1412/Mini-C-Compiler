@@ -1,0 +1,24 @@
+load, store
+	mem access - variable, address
+add, sub, mul, div
+	reg, reg
+	reg, imm
+	imm, imm
+branch - cond, uncond
+	bgt, blt, bge, ble
+	
+identify load/store, add/sub, branch
+after that identify subbrach, according to that make the assembly code
+
+can use symbol table for addresses of the variables used
+
+make a dictionary to map registers and variables called mappings
+
+if there is a var in rhs and is not in mappings, then call the gen_ld_stmt function
+
+make a st statement for all mappings at the end
+
+
+############################
+PAGE 19 AND 20
+############################
